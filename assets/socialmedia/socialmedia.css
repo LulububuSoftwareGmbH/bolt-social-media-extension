@@ -1,0 +1,20 @@
+.lulububu-input-group
+{
+    display:         flex;
+    flex-flow:       row wrap;
+    justify-content: center;
+    gap:             15px;
+    margin-top:      10px;
+}
+
+.lulububu-input-social
+{
+    flex: 1 0 calc(20%);
+}
+
+.lulububu-input-social > span
+{
+    color:         #999999;
+    font-size:     12px;
+    margin-bottom: 5px;
+}

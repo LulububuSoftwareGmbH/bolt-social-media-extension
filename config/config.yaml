@@ -1,0 +1,30 @@
+fields:
+    - Facebook
+    - Twitter
+    - Instagram
+    - YouTube
+    - Pinterest
+    - LinkedIn
+    - WhatsApp
+    - Xing
+
+contenttype: 'settings'
+field:       'socialmedia'
+
+## Example:
+
+#settings:                          <- contenttype
+#    name: Settings
+#    slug: settings
+#    singular_name: Settings
+#    singular_slug: settings
+#    viewless: true
+#    viewless_listing: true
+#    singleton: true
+#    icon_many: 'fa:cogs'
+#    icon_one: 'fa:cog'
+#    fields:
+#        socialmedia:               <- field
+#            type: socialmedia
+#            label: Social Media
+#            group: Social Media

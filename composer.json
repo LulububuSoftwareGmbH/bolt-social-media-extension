@@ -1,0 +1,26 @@
+{
+    "name": "lulububu/bolt-social-media",
+    "description": "Bolt 5 Social Media Extension",
+    "type": "bolt-extension",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0",
+        "bolt/core": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lulububu\\BoltSocialMedia\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "entrypoint": "Lulububu\\BoltSocialMedia\\Extension"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": false,
+            "drupol/composer-packages": false
+        }
+    }
+}

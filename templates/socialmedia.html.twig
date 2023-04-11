@@ -1,0 +1,29 @@
+{% extends '@bolt/_partials/fields/_base.html.twig' %}
+
+{% block field %}
+    {% set defaultLocaleFallbackValue = field.translations.get(defaultLocale) %}
+    {% set value                      = value|default(defaultLocaleFallbackValue ? field.translations.get(defaultLocale).value|first : '{}') %}
+    {% set values                     = value|json_decode(true) %}
+
+    <div class="form-group lulububu-input-group">
+        {% for field, color in socialmedia_fields %}
+            <label class="lulububu-input-social">
+                <span>
+                    {{ field }}:
+                </span>
+                <input
+                    type="text"
+                    name="{{ field }}"
+                    value="{{ field in values|keys ? values[field] }}"
+                    class="form-control lulububu-field"
+                />
+            </label>
+        {% endfor %}
+        <input
+            type="hidden"
+            class="lulububu-save-field"
+            name="{{ name }}"
+            value="{{ value|default('') }}"
+        />
+    </div>
+{% endblock %}
